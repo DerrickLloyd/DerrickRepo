@@ -1,0 +1,1296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20191230 11:15:10.879" generator="Robot 3.1.2 (Python 2.7.17 on win32)">
+<suite source="C:\Users\user\eclipse-workspace\Instagram" id="s1" name="Instagram">
+<suite source="C:\Users\user\eclipse-workspace\Instagram\InstagramLikes.robot" id="s1-s1" name="InstagramLikes">
+<test id="s1-s1-t1" name="Instagram Likes">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://www.instagram.com/coleen/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20191230 11:15:11.033" level="INFO">Opening browser 'chrome' to base url 'https://www.instagram.com/coleen/'.</msg>
+<status status="PASS" endtime="20191230 11:15:19.016" starttime="20191230 11:15:11.032"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20191230 11:15:23.157" starttime="20191230 11:15:19.017"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${TotalHeartsForPictures}</arg>
+<arg>0</arg>
+</arguments>
+<msg timestamp="20191230 11:15:23.159" level="INFO">${TotalHeartsForPictures} = 0</msg>
+<status status="PASS" endtime="20191230 11:15:23.160" starttime="20191230 11:15:23.158"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${TotalAccountsLiked}</arg>
+<arg>0</arg>
+</arguments>
+<msg timestamp="20191230 11:15:23.160" level="INFO">${TotalAccountsLiked} = 0</msg>
+<status status="PASS" endtime="20191230 11:15:23.161" starttime="20191230 11:15:23.160"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${ScrollHeight}</arg>
+<arg>100</arg>
+</arguments>
+<msg timestamp="20191230 11:15:23.162" level="INFO">${ScrollHeight} = 100</msg>
+<status status="PASS" endtime="20191230 11:15:23.162" starttime="20191230 11:15:23.161"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>//button[text()="Log In"]</arg>
+<arg>20s</arg>
+</arguments>
+<status status="PASS" endtime="20191230 11:15:23.191" starttime="20191230 11:15:23.162"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//button[text()="Log In"]</arg>
+</arguments>
+<msg timestamp="20191230 11:15:23.192" level="INFO">Clicking element '//button[text()="Log In"]'.</msg>
+<status status="PASS" endtime="20191230 11:15:23.259" starttime="20191230 11:15:23.191"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>//input[@name="username"]</arg>
+<arg>20s</arg>
+</arguments>
+<status status="PASS" endtime="20191230 11:15:23.514" starttime="20191230 11:15:23.259"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@name="username"]</arg>
+<arg>imderrickpua</arg>
+</arguments>
+<msg timestamp="20191230 11:15:23.515" level="INFO">Typing text 'imderrickpua' into text field '//input[@name="username"]'.</msg>
+<status status="PASS" endtime="20191230 11:15:23.600" starttime="20191230 11:15:23.515"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@name="password"]</arg>
+<arg>IbykCi135!</arg>
+</arguments>
+<msg timestamp="20191230 11:15:23.601" level="INFO">Typing text 'IbykCi135!' into text field '//input[@name="password"]'.</msg>
+<status status="PASS" endtime="20191230 11:15:23.694" starttime="20191230 11:15:23.600"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//div[text()="Log In"]</arg>
+</arguments>
+<msg timestamp="20191230 11:15:23.694" level="INFO">Clicking element '//div[text()="Log In"]'.</msg>
+<status status="PASS" endtime="20191230 11:15:23.744" starttime="20191230 11:15:23.694"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>//a[contains(@href,'followers')]</arg>
+<arg>20s</arg>
+</arguments>
+<status status="PASS" endtime="20191230 11:15:25.870" starttime="20191230 11:15:23.744"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//a[contains(@href,'followers')]</arg>
+</arguments>
+<msg timestamp="20191230 11:15:25.871" level="INFO">Clicking element '//a[contains(@href,'followers')]'.</msg>
+<status status="PASS" endtime="20191230 11:15:25.946" starttime="20191230 11:15:25.870"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>//div[@class="PZuss"]/li</arg>
+<arg>20s</arg>
+</arguments>
+<status status="PASS" endtime="20191230 11:15:27.254" starttime="20191230 11:15:25.946"></status>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>${Count}</arg>
+<arg>Get Element Count</arg>
+<arg>//div[@class="PZuss"]/li</arg>
+</arguments>
+<status status="PASS" endtime="20191230 11:15:27.254" starttime="20191230 11:15:27.254"></status>
+</kw>
+<kw type="for" name="${Index} IN RANGE [ 1 | 20 ]">
+<kw type="foritem" name="${Index} = 1">
+<kw name="Scroll Until Element Is Visible">
+<arguments>
+<arg>//div[@class="PZuss"]/li[${Index}]/div//div[2]/div[1]</arg>
+</arguments>
+<kw type="for" name="${Index} IN RANGE [ 0 | 5 ]">
+<kw type="foritem" name="${Index} = 0">
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>Page Should Contain Element</arg>
+<arg>${Locator}</arg>
+</arguments>
+<assign>
+<var>${Status}</var>
+</assign>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${Locator}</arg>
+</arguments>
+<msg timestamp="20191230 11:15:27.269" level="INFO">Current page contains element '//div[@class="PZuss"]/li[1]/div//div[2]/div[1]'.</msg>
+<status status="PASS" endtime="20191230 11:15:27.269" starttime="20191230 11:15:27.256"></status>
+</kw>
+<msg timestamp="20191230 11:15:27.269" level="INFO">${Status} = True</msg>
+<status status="PASS" endtime="20191230 11:15:27.269" starttime="20191230 11:15:27.256"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${Status}==False</arg>
+<arg>Scroll Down</arg>
+</arguments>
+<status status="PASS" endtime="20191230 11:15:27.270" starttime="20191230 11:15:27.270"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${Status}==True</arg>
+<arg>Exit For Loop</arg>
+</arguments>
+<kw name="Exit For Loop" library="BuiltIn">
+<doc>Stops executing the enclosing for loop.</doc>
+<msg timestamp="20191230 11:15:27.273" level="INFO">Exiting for loop altogether.</msg>
+<status status="PASS" endtime="20191230 11:15:27.273" starttime="20191230 11:15:27.271"></status>
+</kw>
+<status status="PASS" endtime="20191230 11:15:27.273" starttime="20191230 11:15:27.271"></status>
+</kw>
+<status status="PASS" endtime="20191230 11:15:27.273" starttime="20191230 11:15:27.255"></status>
+</kw>
+<status status="PASS" endtime="20191230 11:15:27.273" starttime="20191230 11:15:27.255"></status>
+</kw>
+<status status="PASS" endtime="20191230 11:15:27.274" starttime="20191230 11:15:27.255"></status>
+</kw>
+<kw name="Get Text" library="Selenium2Library">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>//div[@class="PZuss"]/li[${Index}]/div//div[2]/div[1]</arg>
+</arguments>
+<assign>
+<var>${Title}</var>
+</assign>
+<msg timestamp="20191230 11:15:27.299" level="INFO">${Title} = bern.althea</msg>
+<status status="PASS" endtime="20191230 11:15:27.299" starttime="20191230 11:15:27.274"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>//div[@class="PZuss"]/li[${Index}]/div//div[2]/div[1]</arg>
+<arg>20s</arg>
+</arguments>
+<status status="PASS" endtime="20191230 11:15:27.314" starttime="20191230 11:15:27.299"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//div[@class="PZuss"]/li[${Index}]//div[2]/div[1]//a</arg>
+</arguments>
+<msg timestamp="20191230 11:15:27.315" level="INFO">Clicking element '//div[@class="PZuss"]/li[1]//div[2]/div[1]//a'.</msg>
+<status status="PASS" endtime="20191230 11:15:27.378" starttime="20191230 11:15:27.315"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>${Title}</arg>
+<arg>20s</arg>
+</arguments>
+<status status="PASS" endtime="20191230 11:15:27.825" starttime="20191230 11:15:27.379"></status>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${Locator_PictureCards}</arg>
+<arg>1s</arg>
+</arguments>
+<assign>
+<var>${Element}</var>
+</assign>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Locator_PictureCards}</arg>
+<arg>1s</arg>
+</arguments>
+<status status="PASS" endtime="20191230 11:15:27.844" starttime="20191230 11:15:27.826"></status>
+</kw>
+<msg timestamp="20191230 11:15:27.844" level="INFO">${Element} = True</msg>
+<status status="PASS" endtime="20191230 11:15:27.844" starttime="20191230 11:15:27.825"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${Element}==True</arg>
+<arg>Click Picture Card</arg>
+</arguments>
+<kw name="Click Picture Card">
+<kw name="Get Element Count" library="Selenium2Library">
+<doc>Returns the number of elements matching ``locator``.</doc>
+<arguments>
+<arg>${Locator_PictureCards}</arg>
+</arguments>
+<assign>
+<var>${NumberOfPictures}</var>
+</assign>
+<msg timestamp="20191230 11:15:27.858" level="INFO">${NumberOfPictures} = 2</msg>
+<status status="PASS" endtime="20191230 11:15:27.859" starttime="20191230 11:15:27.845"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Locator_PictureCards}</arg>
+</arguments>
+<msg timestamp="20191230 11:15:27.859" level="INFO">Clicking element '//div[@class="_9AhH0"]'.</msg>
+<status status="PASS" endtime="20191230 11:15:27.916" starttime="20191230 11:15:27.859"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${NumberOfPictures}==1</arg>
+<arg>Click Heart 1 Time</arg>
+</arguments>
+<status status="PASS" endtime="20191230 11:15:27.917" starttime="20191230 11:15:27.916"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${NumberOfPictures}==2</arg>
+<arg>Click Hearts 2 Times</arg>
+</arguments>
+<kw name="Click Hearts 2 Times">
+<kw type="for" name="${Index} IN RANGE [ 1 | 2 ]">
+<kw type="foritem" name="${Index} = 1">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Locator_HeartButton}</arg>
+<arg>20s</arg>
+</arguments>
+<status status="PASS" endtime="20191230 11:15:28.363" starttime="20191230 11:15:27.919"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Locator_HeartButton}</arg>
+</arguments>
+<msg timestamp="20191230 11:15:28.363" level="INFO">Clicking element '//span[@class="fr66n"]/button[@class="dCJp8 afkep"]'.</msg>
+<status status="PASS" endtime="20191230 11:15:28.409" starttime="20191230 11:15:28.363"></status>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${Locator_NextArrow}</arg>
+<arg>1s</arg>
+</arguments>
+<assign>
+<var>${ArrowButton}</var>
+</assign>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Locator_NextArrow}</arg>
+<arg>1s</arg>
+</arguments>
+<status status="PASS" endtime="20191230 11:15:28.426" starttime="20191230 11:15:28.410"></status>
+</kw>
+<msg timestamp="20191230 11:15:28.426" level="INFO">${ArrowButton} = True</msg>
+<status status="PASS" endtime="20191230 11:15:28.427" starttime="20191230 11:15:28.409"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${ArrowButton}==True</arg>
+<arg>Click Element</arg>
+<arg>${Locator_NextArrow}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Locator_NextArrow}</arg>
+</arguments>
+<msg timestamp="20191230 11:15:28.428" level="INFO">Clicking element '//a[contains(@class,"RightPaginationArrow")]'.</msg>
+<status status="PASS" endtime="20191230 11:15:28.476" starttime="20191230 11:15:28.427"></status>
+</kw>
+<status status="PASS" endtime="20191230 11:15:28.476" starttime="20191230 11:15:28.427"></status>
+</kw>
+<status status="PASS" endtime="20191230 11:15:28.476" starttime="20191230 11:15:27.919"></status>
+</kw>
+<status status="PASS" endtime="20191230 11:15:28.476" starttime="20191230 11:15:27.919"></status>
+</kw>
+<kw name="Go Back" library="Selenium2Library">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" endtime="20191230 11:15:28.494" starttime="20191230 11:15:28.477"></status>
+</kw>
+<kw name="Go Back" library="Selenium2Library">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" endtime="20191230 11:15:28.522" starttime="20191230 11:15:28.495"></status>
+</kw>
+<kw name="Go Back" library="Selenium2Library">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" endtime="20191230 11:15:28.710" starttime="20191230 11:15:28.522"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${TotalHeartsForPictures}+2</arg>
+</arguments>
+<assign>
+<var>${TotalHeartsForPictures}</var>
+</assign>
+<msg timestamp="20191230 11:15:28.711" level="INFO">${TotalHeartsForPictures} = 2</msg>
+<status status="PASS" endtime="20191230 11:15:28.711" starttime="20191230 11:15:28.710"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${TotalHeartsForPictures}</arg>
+<arg>${TotalHeartsForPictures}</arg>
+</arguments>
+<msg timestamp="20191230 11:15:28.712" level="INFO">${TotalHeartsForPictures} = 2</msg>
+<status status="PASS" endtime="20191230 11:15:28.712" starttime="20191230 11:15:28.711"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${TotalAccountsLiked}+1</arg>
+</arguments>
+<assign>
+<var>${TotalAccountsLiked}</var>
+</assign>
+<msg timestamp="20191230 11:15:28.713" level="INFO">${TotalAccountsLiked} = 1</msg>
+<status status="PASS" endtime="20191230 11:15:28.713" starttime="20191230 11:15:28.712"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${TotalAccountsLiked}</arg>
+<arg>${TotalAccountsLiked}</arg>
+</arguments>
+<msg timestamp="20191230 11:15:28.713" level="INFO">${TotalAccountsLiked} = 1</msg>
+<status status="PASS" endtime="20191230 11:15:28.714" starttime="20191230 11:15:28.713"></status>
+</kw>
+<status status="PASS" endtime="20191230 11:15:28.714" starttime="20191230 11:15:27.918"></status>
+</kw>
+<status status="PASS" endtime="20191230 11:15:28.714" starttime="20191230 11:15:27.918"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${NumberOfPictures}==3</arg>
+<arg>Click Hearts 3 Times</arg>
+</arguments>
+<status status="PASS" endtime="20191230 11:15:28.715" starttime="20191230 11:15:28.714"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${NumberOfPictures}&gt;3</arg>
+<arg>Click Hearts More Than 3</arg>
+</arguments>
+<status status="PASS" endtime="20191230 11:15:28.717" starttime="20191230 11:15:28.716"></status>
+</kw>
+<status status="PASS" endtime="20191230 11:15:28.718" starttime="20191230 11:15:27.845"></status>
+</kw>
+<status status="PASS" endtime="20191230 11:15:28.718" starttime="20191230 11:15:27.844"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${Element}==False</arg>
+<arg>Go Back</arg>
+</arguments>
+<status status="PASS" endtime="20191230 11:15:28.719" starttime="20191230 11:15:28.719"></status>
+</kw>
+<status status="PASS" endtime="20191230 11:15:28.719" starttime="20191230 11:15:27.255"></status>
+</kw>
+<kw type="foritem" name="${Index} = 2">
+<kw name="Scroll Until Element Is Visible">
+<arguments>
+<arg>//div[@class="PZuss"]/li[${Index}]/div//div[2]/div[1]</arg>
+</arguments>
+<kw type="for" name="${Index} IN RANGE [ 0 | 5 ]">
+<kw type="foritem" name="${Index} = 0">
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>Page Should Contain Element</arg>
+<arg>${Locator}</arg>
+</arguments>
+<assign>
+<var>${Status}</var>
+</assign>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${Locator}</arg>
+</arguments>
+<msg timestamp="20191230 11:15:28.746" level="INFO">Current page contains element '//div[@class="PZuss"]/li[2]/div//div[2]/div[1]'.</msg>
+<status status="PASS" endtime="20191230 11:15:28.746" starttime="20191230 11:15:28.721"></status>
+</kw>
+<msg timestamp="20191230 11:15:28.746" level="INFO">${Status} = True</msg>
+<status status="PASS" endtime="20191230 11:15:28.746" starttime="20191230 11:15:28.721"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${Status}==False</arg>
+<arg>Scroll Down</arg>
+</arguments>
+<status status="PASS" endtime="20191230 11:15:28.747" starttime="20191230 11:15:28.747"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${Status}==True</arg>
+<arg>Exit For Loop</arg>
+</arguments>
+<kw name="Exit For Loop" library="BuiltIn">
+<doc>Stops executing the enclosing for loop.</doc>
+<msg timestamp="20191230 11:15:28.748" level="INFO">Exiting for loop altogether.</msg>
+<status status="PASS" endtime="20191230 11:15:28.748" starttime="20191230 11:15:28.748"></status>
+</kw>
+<status status="PASS" endtime="20191230 11:15:28.748" starttime="20191230 11:15:28.747"></status>
+</kw>
+<status status="PASS" endtime="20191230 11:15:28.748" starttime="20191230 11:15:28.720"></status>
+</kw>
+<status status="PASS" endtime="20191230 11:15:28.748" starttime="20191230 11:15:28.720"></status>
+</kw>
+<status status="PASS" endtime="20191230 11:15:28.749" starttime="20191230 11:15:28.720"></status>
+</kw>
+<kw name="Get Text" library="Selenium2Library">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>//div[@class="PZuss"]/li[${Index}]/div//div[2]/div[1]</arg>
+</arguments>
+<assign>
+<var>${Title}</var>
+</assign>
+<msg timestamp="20191230 11:15:28.810" level="INFO">${Title} = marcoclark24</msg>
+<status status="PASS" endtime="20191230 11:15:28.811" starttime="20191230 11:15:28.749"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>//div[@class="PZuss"]/li[${Index}]/div//div[2]/div[1]</arg>
+<arg>20s</arg>
+</arguments>
+<status status="PASS" endtime="20191230 11:15:28.827" starttime="20191230 11:15:28.811"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//div[@class="PZuss"]/li[${Index}]//div[2]/div[1]//a</arg>
+</arguments>
+<msg timestamp="20191230 11:15:28.828" level="INFO">Clicking element '//div[@class="PZuss"]/li[2]//div[2]/div[1]//a'.</msg>
+<status status="PASS" endtime="20191230 11:15:28.909" starttime="20191230 11:15:28.828"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>${Title}</arg>
+<arg>20s</arg>
+</arguments>
+<status status="PASS" endtime="20191230 11:15:30.193" starttime="20191230 11:15:28.910"></status>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${Locator_PictureCards}</arg>
+<arg>1s</arg>
+</arguments>
+<assign>
+<var>${Element}</var>
+</assign>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Locator_PictureCards}</arg>
+<arg>1s</arg>
+</arguments>
+<status status="PASS" endtime="20191230 11:15:30.208" starttime="20191230 11:15:30.194"></status>
+</kw>
+<msg timestamp="20191230 11:15:30.208" level="INFO">${Element} = True</msg>
+<status status="PASS" endtime="20191230 11:15:30.209" starttime="20191230 11:15:30.193"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${Element}==True</arg>
+<arg>Click Picture Card</arg>
+</arguments>
+<kw name="Click Picture Card">
+<kw name="Get Element Count" library="Selenium2Library">
+<doc>Returns the number of elements matching ``locator``.</doc>
+<arguments>
+<arg>${Locator_PictureCards}</arg>
+</arguments>
+<assign>
+<var>${NumberOfPictures}</var>
+</assign>
+<msg timestamp="20191230 11:15:30.215" level="INFO">${NumberOfPictures} = 5</msg>
+<status status="PASS" endtime="20191230 11:15:30.215" starttime="20191230 11:15:30.209"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Locator_PictureCards}</arg>
+</arguments>
+<msg timestamp="20191230 11:15:30.216" level="INFO">Clicking element '//div[@class="_9AhH0"]'.</msg>
+<status status="PASS" endtime="20191230 11:15:30.281" starttime="20191230 11:15:30.215"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${NumberOfPictures}==1</arg>
+<arg>Click Heart 1 Time</arg>
+</arguments>
+<status status="PASS" endtime="20191230 11:15:30.282" starttime="20191230 11:15:30.281"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${NumberOfPictures}==2</arg>
+<arg>Click Hearts 2 Times</arg>
+</arguments>
+<status status="PASS" endtime="20191230 11:15:30.283" starttime="20191230 11:15:30.282"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${NumberOfPictures}==3</arg>
+<arg>Click Hearts 3 Times</arg>
+</arguments>
+<status status="PASS" endtime="20191230 11:15:30.284" starttime="20191230 11:15:30.283"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${NumberOfPictures}&gt;3</arg>
+<arg>Click Hearts More Than 3</arg>
+</arguments>
+<kw name="Click Hearts More Than 3">
+<kw type="for" name="${Index} IN RANGE [ 1 | 4 ]">
+<kw type="foritem" name="${Index} = 1">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Locator_HeartButton}</arg>
+<arg>20s</arg>
+</arguments>
+<status status="PASS" endtime="20191230 11:15:30.745" starttime="20191230 11:15:30.286"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Locator_HeartButton}</arg>
+</arguments>
+<msg timestamp="20191230 11:15:30.747" level="INFO">Clicking element '//span[@class="fr66n"]/button[@class="dCJp8 afkep"]'.</msg>
+<status status="PASS" endtime="20191230 11:15:30.797" starttime="20191230 11:15:30.746"></status>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${Locator_NextArrow}</arg>
+<arg>1s</arg>
+</arguments>
+<assign>
+<var>${ArrowButton}</var>
+</assign>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Locator_NextArrow}</arg>
+<arg>1s</arg>
+</arguments>
+<status status="PASS" endtime="20191230 11:15:30.813" starttime="20191230 11:15:30.797"></status>
+</kw>
+<msg timestamp="20191230 11:15:30.813" level="INFO">${ArrowButton} = True</msg>
+<status status="PASS" endtime="20191230 11:15:30.813" starttime="20191230 11:15:30.797"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${ArrowButton}==True</arg>
+<arg>Click Element</arg>
+<arg>${Locator_NextArrow}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Locator_NextArrow}</arg>
+</arguments>
+<msg timestamp="20191230 11:15:30.814" level="INFO">Clicking element '//a[contains(@class,"RightPaginationArrow")]'.</msg>
+<status status="PASS" endtime="20191230 11:15:30.868" starttime="20191230 11:15:30.814"></status>
+</kw>
+<status status="PASS" endtime="20191230 11:15:30.869" starttime="20191230 11:15:30.813"></status>
+</kw>
+<status status="PASS" endtime="20191230 11:15:30.869" starttime="20191230 11:15:30.286"></status>
+</kw>
+<kw type="foritem" name="${Index} = 2">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Locator_HeartButton}</arg>
+<arg>20s</arg>
+</arguments>
+<status status="PASS" endtime="20191230 11:15:31.305" starttime="20191230 11:15:30.869"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Locator_HeartButton}</arg>
+</arguments>
+<msg timestamp="20191230 11:15:31.306" level="INFO">Clicking element '//span[@class="fr66n"]/button[@class="dCJp8 afkep"]'.</msg>
+<status status="PASS" endtime="20191230 11:15:31.340" starttime="20191230 11:15:31.305"></status>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${Locator_NextArrow}</arg>
+<arg>1s</arg>
+</arguments>
+<assign>
+<var>${ArrowButton}</var>
+</assign>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Locator_NextArrow}</arg>
+<arg>1s</arg>
+</arguments>
+<status status="PASS" endtime="20191230 11:15:31.354" starttime="20191230 11:15:31.341"></status>
+</kw>
+<msg timestamp="20191230 11:15:31.354" level="INFO">${ArrowButton} = True</msg>
+<status status="PASS" endtime="20191230 11:15:31.354" starttime="20191230 11:15:31.340"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${ArrowButton}==True</arg>
+<arg>Click Element</arg>
+<arg>${Locator_NextArrow}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Locator_NextArrow}</arg>
+</arguments>
+<msg timestamp="20191230 11:15:31.355" level="INFO">Clicking element '//a[contains(@class,"RightPaginationArrow")]'.</msg>
+<status status="PASS" endtime="20191230 11:15:31.387" starttime="20191230 11:15:31.355"></status>
+</kw>
+<status status="PASS" endtime="20191230 11:15:31.387" starttime="20191230 11:15:31.354"></status>
+</kw>
+<status status="PASS" endtime="20191230 11:15:31.387" starttime="20191230 11:15:30.869"></status>
+</kw>
+<kw type="foritem" name="${Index} = 3">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Locator_HeartButton}</arg>
+<arg>20s</arg>
+</arguments>
+<status status="PASS" endtime="20191230 11:15:31.822" starttime="20191230 11:15:31.388"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Locator_HeartButton}</arg>
+</arguments>
+<msg timestamp="20191230 11:15:31.823" level="INFO">Clicking element '//span[@class="fr66n"]/button[@class="dCJp8 afkep"]'.</msg>
+<status status="PASS" endtime="20191230 11:15:31.858" starttime="20191230 11:15:31.823"></status>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${Locator_NextArrow}</arg>
+<arg>1s</arg>
+</arguments>
+<assign>
+<var>${ArrowButton}</var>
+</assign>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Locator_NextArrow}</arg>
+<arg>1s</arg>
+</arguments>
+<status status="PASS" endtime="20191230 11:15:31.873" starttime="20191230 11:15:31.859"></status>
+</kw>
+<msg timestamp="20191230 11:15:31.873" level="INFO">${ArrowButton} = True</msg>
+<status status="PASS" endtime="20191230 11:15:31.873" starttime="20191230 11:15:31.859"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${ArrowButton}==True</arg>
+<arg>Click Element</arg>
+<arg>${Locator_NextArrow}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Locator_NextArrow}</arg>
+</arguments>
+<msg timestamp="20191230 11:15:31.874" level="INFO">Clicking element '//a[contains(@class,"RightPaginationArrow")]'.</msg>
+<status status="PASS" endtime="20191230 11:15:31.937" starttime="20191230 11:15:31.874"></status>
+</kw>
+<status status="PASS" endtime="20191230 11:15:31.937" starttime="20191230 11:15:31.874"></status>
+</kw>
+<status status="PASS" endtime="20191230 11:15:31.937" starttime="20191230 11:15:31.388"></status>
+</kw>
+<status status="PASS" endtime="20191230 11:15:31.937" starttime="20191230 11:15:30.286"></status>
+</kw>
+<kw name="Go Back" library="Selenium2Library">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" endtime="20191230 11:15:31.952" starttime="20191230 11:15:31.938"></status>
+</kw>
+<kw name="Go Back" library="Selenium2Library">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" endtime="20191230 11:15:31.966" starttime="20191230 11:15:31.953"></status>
+</kw>
+<kw name="Go Back" library="Selenium2Library">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" endtime="20191230 11:15:31.980" starttime="20191230 11:15:31.966"></status>
+</kw>
+<kw name="Go Back" library="Selenium2Library">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" endtime="20191230 11:15:31.998" starttime="20191230 11:15:31.980"></status>
+</kw>
+<kw name="Go Back" library="Selenium2Library">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" endtime="20191230 11:15:32.149" starttime="20191230 11:15:31.998"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${TotalHeartsForPictures}+3</arg>
+</arguments>
+<assign>
+<var>${TotalHeartsForPictures}</var>
+</assign>
+<msg timestamp="20191230 11:15:32.150" level="INFO">${TotalHeartsForPictures} = 5</msg>
+<status status="PASS" endtime="20191230 11:15:32.150" starttime="20191230 11:15:32.149"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${TotalHeartsForPictures}</arg>
+<arg>${TotalHeartsForPictures}</arg>
+</arguments>
+<msg timestamp="20191230 11:15:32.151" level="INFO">${TotalHeartsForPictures} = 5</msg>
+<status status="PASS" endtime="20191230 11:15:32.151" starttime="20191230 11:15:32.150"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${TotalAccountsLiked}+1</arg>
+</arguments>
+<assign>
+<var>${TotalAccountsLiked}</var>
+</assign>
+<msg timestamp="20191230 11:15:32.151" level="INFO">${TotalAccountsLiked} = 2</msg>
+<status status="PASS" endtime="20191230 11:15:32.151" starttime="20191230 11:15:32.151"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${TotalAccountsLiked}</arg>
+<arg>${TotalAccountsLiked}</arg>
+</arguments>
+<msg timestamp="20191230 11:15:32.152" level="INFO">${TotalAccountsLiked} = 2</msg>
+<status status="PASS" endtime="20191230 11:15:32.152" starttime="20191230 11:15:32.151"></status>
+</kw>
+<status status="PASS" endtime="20191230 11:15:32.152" starttime="20191230 11:15:30.285"></status>
+</kw>
+<status status="PASS" endtime="20191230 11:15:32.152" starttime="20191230 11:15:30.284"></status>
+</kw>
+<status status="PASS" endtime="20191230 11:15:32.152" starttime="20191230 11:15:30.209"></status>
+</kw>
+<status status="PASS" endtime="20191230 11:15:32.153" starttime="20191230 11:15:30.209"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${Element}==False</arg>
+<arg>Go Back</arg>
+</arguments>
+<status status="PASS" endtime="20191230 11:15:32.153" starttime="20191230 11:15:32.153"></status>
+</kw>
+<status status="PASS" endtime="20191230 11:15:32.153" starttime="20191230 11:15:28.720"></status>
+</kw>
+<kw type="foritem" name="${Index} = 3">
+<kw name="Scroll Until Element Is Visible">
+<arguments>
+<arg>//div[@class="PZuss"]/li[${Index}]/div//div[2]/div[1]</arg>
+</arguments>
+<kw type="for" name="${Index} IN RANGE [ 0 | 5 ]">
+<kw type="foritem" name="${Index} = 0">
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>Page Should Contain Element</arg>
+<arg>${Locator}</arg>
+</arguments>
+<assign>
+<var>${Status}</var>
+</assign>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${Locator}</arg>
+</arguments>
+<msg timestamp="20191230 11:15:32.173" level="INFO">Current page contains element '//div[@class="PZuss"]/li[3]/div//div[2]/div[1]'.</msg>
+<status status="PASS" endtime="20191230 11:15:32.173" starttime="20191230 11:15:32.154"></status>
+</kw>
+<msg timestamp="20191230 11:15:32.174" level="INFO">${Status} = True</msg>
+<status status="PASS" endtime="20191230 11:15:32.174" starttime="20191230 11:15:32.154"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${Status}==False</arg>
+<arg>Scroll Down</arg>
+</arguments>
+<status status="PASS" endtime="20191230 11:15:32.174" starttime="20191230 11:15:32.174"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${Status}==True</arg>
+<arg>Exit For Loop</arg>
+</arguments>
+<kw name="Exit For Loop" library="BuiltIn">
+<doc>Stops executing the enclosing for loop.</doc>
+<msg timestamp="20191230 11:15:32.175" level="INFO">Exiting for loop altogether.</msg>
+<status status="PASS" endtime="20191230 11:15:32.175" starttime="20191230 11:15:32.175"></status>
+</kw>
+<status status="PASS" endtime="20191230 11:15:32.175" starttime="20191230 11:15:32.174"></status>
+</kw>
+<status status="PASS" endtime="20191230 11:15:32.175" starttime="20191230 11:15:32.154"></status>
+</kw>
+<status status="PASS" endtime="20191230 11:15:32.175" starttime="20191230 11:15:32.154"></status>
+</kw>
+<status status="PASS" endtime="20191230 11:15:32.176" starttime="20191230 11:15:32.153"></status>
+</kw>
+<kw name="Get Text" library="Selenium2Library">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>//div[@class="PZuss"]/li[${Index}]/div//div[2]/div[1]</arg>
+</arguments>
+<assign>
+<var>${Title}</var>
+</assign>
+<msg timestamp="20191230 11:15:32.223" level="INFO">${Title} = allisonoliveros9</msg>
+<status status="PASS" endtime="20191230 11:15:32.223" starttime="20191230 11:15:32.176"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>//div[@class="PZuss"]/li[${Index}]/div//div[2]/div[1]</arg>
+<arg>20s</arg>
+</arguments>
+<status status="PASS" endtime="20191230 11:15:32.240" starttime="20191230 11:15:32.224"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//div[@class="PZuss"]/li[${Index}]//div[2]/div[1]//a</arg>
+</arguments>
+<msg timestamp="20191230 11:15:32.240" level="INFO">Clicking element '//div[@class="PZuss"]/li[3]//div[2]/div[1]//a'.</msg>
+<status status="PASS" endtime="20191230 11:15:32.310" starttime="20191230 11:15:32.240"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>${Title}</arg>
+<arg>20s</arg>
+</arguments>
+<status status="PASS" endtime="20191230 11:15:32.737" starttime="20191230 11:15:32.310"></status>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${Locator_PictureCards}</arg>
+<arg>1s</arg>
+</arguments>
+<assign>
+<var>${Element}</var>
+</assign>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Locator_PictureCards}</arg>
+<arg>1s</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20191230 11:15:34.077" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20191230 11:15:34.078" starttime="20191230 11:15:33.777"></status>
+</kw>
+<msg timestamp="20191230 11:15:34.079" level="FAIL">Element '//div[@class="_9AhH0"]' not visible after 1 second.</msg>
+<status status="FAIL" endtime="20191230 11:15:34.079" starttime="20191230 11:15:32.738"></status>
+</kw>
+<msg timestamp="20191230 11:15:34.079" level="INFO">${Element} = False</msg>
+<status status="PASS" endtime="20191230 11:15:34.079" starttime="20191230 11:15:32.738"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${Element}==True</arg>
+<arg>Click Picture Card</arg>
+</arguments>
+<status status="PASS" endtime="20191230 11:15:34.080" starttime="20191230 11:15:34.079"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${Element}==False</arg>
+<arg>Go Back</arg>
+</arguments>
+<kw name="Go Back" library="Selenium2Library">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" endtime="20191230 11:15:34.222" starttime="20191230 11:15:34.080"></status>
+</kw>
+<status status="PASS" endtime="20191230 11:15:34.223" starttime="20191230 11:15:34.080"></status>
+</kw>
+<status status="PASS" endtime="20191230 11:15:34.223" starttime="20191230 11:15:32.153"></status>
+</kw>
+<kw type="foritem" name="${Index} = 4">
+<kw name="Scroll Until Element Is Visible">
+<arguments>
+<arg>//div[@class="PZuss"]/li[${Index}]/div//div[2]/div[1]</arg>
+</arguments>
+<kw type="for" name="${Index} IN RANGE [ 0 | 5 ]">
+<kw type="foritem" name="${Index} = 0">
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>Page Should Contain Element</arg>
+<arg>${Locator}</arg>
+</arguments>
+<assign>
+<var>${Status}</var>
+</assign>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${Locator}</arg>
+</arguments>
+<msg timestamp="20191230 11:15:34.233" level="INFO">Current page contains element '//div[@class="PZuss"]/li[4]/div//div[2]/div[1]'.</msg>
+<status status="PASS" endtime="20191230 11:15:34.234" starttime="20191230 11:15:34.224"></status>
+</kw>
+<msg timestamp="20191230 11:15:34.234" level="INFO">${Status} = True</msg>
+<status status="PASS" endtime="20191230 11:15:34.234" starttime="20191230 11:15:34.224"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${Status}==False</arg>
+<arg>Scroll Down</arg>
+</arguments>
+<status status="PASS" endtime="20191230 11:15:34.236" starttime="20191230 11:15:34.234"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${Status}==True</arg>
+<arg>Exit For Loop</arg>
+</arguments>
+<kw name="Exit For Loop" library="BuiltIn">
+<doc>Stops executing the enclosing for loop.</doc>
+<msg timestamp="20191230 11:15:34.237" level="INFO">Exiting for loop altogether.</msg>
+<status status="PASS" endtime="20191230 11:15:34.237" starttime="20191230 11:15:34.237"></status>
+</kw>
+<status status="PASS" endtime="20191230 11:15:34.238" starttime="20191230 11:15:34.236"></status>
+</kw>
+<status status="PASS" endtime="20191230 11:15:34.238" starttime="20191230 11:15:34.224"></status>
+</kw>
+<status status="PASS" endtime="20191230 11:15:34.238" starttime="20191230 11:15:34.224"></status>
+</kw>
+<status status="PASS" endtime="20191230 11:15:34.238" starttime="20191230 11:15:34.223"></status>
+</kw>
+<kw name="Get Text" library="Selenium2Library">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>//div[@class="PZuss"]/li[${Index}]/div//div[2]/div[1]</arg>
+</arguments>
+<assign>
+<var>${Title}</var>
+</assign>
+<msg timestamp="20191230 11:15:34.271" level="INFO">${Title} = blitsoy</msg>
+<status status="PASS" endtime="20191230 11:15:34.271" starttime="20191230 11:15:34.238"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>//div[@class="PZuss"]/li[${Index}]/div//div[2]/div[1]</arg>
+<arg>20s</arg>
+</arguments>
+<status status="PASS" endtime="20191230 11:15:34.293" starttime="20191230 11:15:34.271"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//div[@class="PZuss"]/li[${Index}]//div[2]/div[1]//a</arg>
+</arguments>
+<msg timestamp="20191230 11:15:34.293" level="INFO">Clicking element '//div[@class="PZuss"]/li[4]//div[2]/div[1]//a'.</msg>
+<status status="PASS" endtime="20191230 11:15:34.362" starttime="20191230 11:15:34.293"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>${Title}</arg>
+<arg>20s</arg>
+</arguments>
+<status status="PASS" endtime="20191230 11:15:35.017" starttime="20191230 11:15:34.363"></status>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${Locator_PictureCards}</arg>
+<arg>1s</arg>
+</arguments>
+<assign>
+<var>${Element}</var>
+</assign>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Locator_PictureCards}</arg>
+<arg>1s</arg>
+</arguments>
+<status status="PASS" endtime="20191230 11:15:35.033" starttime="20191230 11:15:35.018"></status>
+</kw>
+<msg timestamp="20191230 11:15:35.034" level="INFO">${Element} = True</msg>
+<status status="PASS" endtime="20191230 11:15:35.034" starttime="20191230 11:15:35.018"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${Element}==True</arg>
+<arg>Click Picture Card</arg>
+</arguments>
+<kw name="Click Picture Card">
+<kw name="Get Element Count" library="Selenium2Library">
+<doc>Returns the number of elements matching ``locator``.</doc>
+<arguments>
+<arg>${Locator_PictureCards}</arg>
+</arguments>
+<assign>
+<var>${NumberOfPictures}</var>
+</assign>
+<msg timestamp="20191230 11:15:35.040" level="INFO">${NumberOfPictures} = 1</msg>
+<status status="PASS" endtime="20191230 11:15:35.040" starttime="20191230 11:15:35.034"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Locator_PictureCards}</arg>
+</arguments>
+<msg timestamp="20191230 11:15:35.041" level="INFO">Clicking element '//div[@class="_9AhH0"]'.</msg>
+<status status="PASS" endtime="20191230 11:15:35.085" starttime="20191230 11:15:35.040"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${NumberOfPictures}==1</arg>
+<arg>Click Heart 1 Time</arg>
+</arguments>
+<kw name="Click Heart 1 Time">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Locator_HeartButton}</arg>
+<arg>20s</arg>
+</arguments>
+<status status="PASS" endtime="20191230 11:15:35.522" starttime="20191230 11:15:35.087"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Locator_HeartButton}</arg>
+</arguments>
+<msg timestamp="20191230 11:15:35.523" level="INFO">Clicking element '//span[@class="fr66n"]/button[@class="dCJp8 afkep"]'.</msg>
+<status status="PASS" endtime="20191230 11:15:35.559" starttime="20191230 11:15:35.523"></status>
+</kw>
+<kw name="Go Back" library="Selenium2Library">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" endtime="20191230 11:15:35.579" starttime="20191230 11:15:35.559"></status>
+</kw>
+<kw name="Go Back" library="Selenium2Library">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" endtime="20191230 11:15:35.710" starttime="20191230 11:15:35.580"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${TotalHeartsForPictures}+1</arg>
+</arguments>
+<assign>
+<var>${TotalHeartsForPictures}</var>
+</assign>
+<msg timestamp="20191230 11:15:35.711" level="INFO">${TotalHeartsForPictures} = 6</msg>
+<status status="PASS" endtime="20191230 11:15:35.711" starttime="20191230 11:15:35.710"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${TotalHeartsForPictures}</arg>
+<arg>${TotalHeartsForPictures}</arg>
+</arguments>
+<msg timestamp="20191230 11:15:35.712" level="INFO">${TotalHeartsForPictures} = 6</msg>
+<status status="PASS" endtime="20191230 11:15:35.712" starttime="20191230 11:15:35.711"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${TotalAccountsLiked}+1</arg>
+</arguments>
+<assign>
+<var>${TotalAccountsLiked}</var>
+</assign>
+<msg timestamp="20191230 11:15:35.712" level="INFO">${TotalAccountsLiked} = 3</msg>
+<status status="PASS" endtime="20191230 11:15:35.712" starttime="20191230 11:15:35.712"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${TotalAccountsLiked}</arg>
+<arg>${TotalAccountsLiked}</arg>
+</arguments>
+<msg timestamp="20191230 11:15:35.713" level="INFO">${TotalAccountsLiked} = 3</msg>
+<status status="PASS" endtime="20191230 11:15:35.713" starttime="20191230 11:15:35.713"></status>
+</kw>
+<status status="PASS" endtime="20191230 11:15:35.713" starttime="20191230 11:15:35.086"></status>
+</kw>
+<status status="PASS" endtime="20191230 11:15:35.713" starttime="20191230 11:15:35.086"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${NumberOfPictures}==2</arg>
+<arg>Click Hearts 2 Times</arg>
+</arguments>
+<status status="PASS" endtime="20191230 11:15:35.714" starttime="20191230 11:15:35.713"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${NumberOfPictures}==3</arg>
+<arg>Click Hearts 3 Times</arg>
+</arguments>
+<status status="PASS" endtime="20191230 11:15:35.714" starttime="20191230 11:15:35.714"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${NumberOfPictures}&gt;3</arg>
+<arg>Click Hearts More Than 3</arg>
+</arguments>
+<status status="PASS" endtime="20191230 11:15:35.715" starttime="20191230 11:15:35.714"></status>
+</kw>
+<status status="PASS" endtime="20191230 11:15:35.715" starttime="20191230 11:15:35.034"></status>
+</kw>
+<status status="PASS" endtime="20191230 11:15:35.715" starttime="20191230 11:15:35.034"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${Element}==False</arg>
+<arg>Go Back</arg>
+</arguments>
+<status status="PASS" endtime="20191230 11:15:35.715" starttime="20191230 11:15:35.715"></status>
+</kw>
+<status status="PASS" endtime="20191230 11:15:35.716" starttime="20191230 11:15:34.223"></status>
+</kw>
+<kw type="foritem" name="${Index} = 5">
+<kw name="Scroll Until Element Is Visible">
+<arguments>
+<arg>//div[@class="PZuss"]/li[${Index}]/div//div[2]/div[1]</arg>
+</arguments>
+<kw type="for" name="${Index} IN RANGE [ 0 | 5 ]">
+<kw type="foritem" name="${Index} = 0">
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>Page Should Contain Element</arg>
+<arg>${Locator}</arg>
+</arguments>
+<assign>
+<var>${Status}</var>
+</assign>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${Locator}</arg>
+</arguments>
+<msg timestamp="20191230 11:15:35.737" level="INFO">Current page contains element '//div[@class="PZuss"]/li[5]/div//div[2]/div[1]'.</msg>
+<status status="PASS" endtime="20191230 11:15:35.737" starttime="20191230 11:15:35.717"></status>
+</kw>
+<msg timestamp="20191230 11:15:35.738" level="INFO">${Status} = True</msg>
+<status status="PASS" endtime="20191230 11:15:35.738" starttime="20191230 11:15:35.717"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${Status}==False</arg>
+<arg>Scroll Down</arg>
+</arguments>
+<status status="PASS" endtime="20191230 11:15:35.739" starttime="20191230 11:15:35.738"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${Status}==True</arg>
+<arg>Exit For Loop</arg>
+</arguments>
+<kw name="Exit For Loop" library="BuiltIn">
+<doc>Stops executing the enclosing for loop.</doc>
+<msg timestamp="20191230 11:15:35.740" level="INFO">Exiting for loop altogether.</msg>
+<status status="PASS" endtime="20191230 11:15:35.740" starttime="20191230 11:15:35.739"></status>
+</kw>
+<status status="PASS" endtime="20191230 11:15:35.740" starttime="20191230 11:15:35.739"></status>
+</kw>
+<status status="PASS" endtime="20191230 11:15:35.740" starttime="20191230 11:15:35.716"></status>
+</kw>
+<status status="PASS" endtime="20191230 11:15:35.741" starttime="20191230 11:15:35.716"></status>
+</kw>
+<status status="PASS" endtime="20191230 11:15:35.741" starttime="20191230 11:15:35.716"></status>
+</kw>
+<kw name="Get Text" library="Selenium2Library">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>//div[@class="PZuss"]/li[${Index}]/div//div[2]/div[1]</arg>
+</arguments>
+<assign>
+<var>${Title}</var>
+</assign>
+<msg timestamp="20191230 11:15:35.770" level="INFO">${Title} = mosaduwk</msg>
+<status status="PASS" endtime="20191230 11:15:35.770" starttime="20191230 11:15:35.741">
