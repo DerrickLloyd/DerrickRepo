@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<keywordspec generated="20210205 23:23:29" type="library" name="sendmail" format="ROBOT">
-<version></version>
-<scope>global</scope>
-<namedargs>yes</namedargs>
-<doc>Documentation for library ``sendmail``.</doc>
-</keywordspec>
