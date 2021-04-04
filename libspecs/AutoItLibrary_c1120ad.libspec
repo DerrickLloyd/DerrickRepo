@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keywordspec generated="20210205 22:37:18" type="library" name="AutoItLibrary" format="ROBOT">
+<version></version>
+<scope>global</scope>
+<namedargs>yes</namedargs>
+<doc>*AutoItLibrary* is a Robot Framework keyword library wrapper for for the freeware *AutoIt* tool
+(http://www.autoitscript.com/autoit3/index.shtml) using AutoIt's *AutoItX.dll* COM object. The
+*AutoItLibrary* class provides a proxy for the AutoIt keywords callable on the AutoIt COM object and
+provides additional high-level keywords implemented as methods in this class.
+
+In the following documentation on each keyword, the keywords whose documentation is simply
+_method &lt;KeywordName&gt;_ (e.g. "_method ControlClick_") are the native AutoIt keywords.  The detailed
+documentation for these keywords is available in the AutoItX documentation file:
+*AutoItX.chm*.  This file is installed as part of the installation of *AutoItLibrary* as:
+
+    C:\RobotFramework\Extensions\AutoItLibrary\AutoItX.chm
+
+In order to discover the control identifiers in a given Windows GUI, AutoIt provides a standalone
+tool called the AutoIt Window Info Tool which is installed as part of the installation of
+*AutoItLibrary* as:
+
+    C:\RobotFramework\Extensions\AutoItLibrary\Au3Info.exe
+
+This tool is documented here: http://www.autoitscript.com/autoit3/docs/intro/au3spy.htm</doc>
+<init>
+<arguments>
+<arg>TimeOut=60</arg>
+<arg>CaptureScreenOnError=False</arg>
+</arguments>
+<doc>| OutputDir=&lt;path&gt;          | Output directory for captured screenshots. Should set to _${OUTPUTDIR}_ |
+| Timeout=&lt;seconds&gt;         | Default TimeOut value in seconds.                                       |
+|                           | This is used in other methods when their TimeOut parameter is not used. |
+| CaptureScreenOnError=True | Defaults to False.  Set to _${True}_ to capture the PC screen on any    |
+|                           | AutoItLibrary keyword failure.                                          |</doc>
+<tags>
+</tags>
+</init>
+<kw name="Get Active Window Image">
+<arguments>
+<arg>FilePath</arg>
+</arguments>
+<doc>Capture an image of the active window into the given _FilePath_.
+The given _FilePath_ must be relative to Robot Framework output directory,
+otherwise the embedded image will not be shown in the log file.</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Get Auto It Version">
+<arguments>
+</arguments>
+<doc>Returns a string with the version of the AutoItX COM object.</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Get Screen Image">
+<arguments>
+<arg>FilePath</arg>
+</arguments>
+<doc>Capture a full screen image into the given _FilePath_.
+The given _FilePath_ must be relative to Robot Framework output directory,
+otherwise the embedded image will not be shown in the log file.</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Get Version">
+<arguments>
+</arguments>
+<doc>Returns a string with the version of the AutoItLibrary.</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Run">
+<arguments>
+<arg>FileName</arg>
+<arg>WorkingDir=</arg>
+<arg>Flag=</arg>
+</arguments>
+<doc>Direct wrapper for AutoIt's Run method.
+
+This is required in order to do error code translation into exceptions for Robot Framework.</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Wait For Active Window">
+<arguments>
+<arg>WindowTitle</arg>
+<arg>WindowText=</arg>
+<arg>TimeOut=-1</arg>
+</arguments>
+<doc>Wait up to _TimeOut_ seconds for the window with the given _WindowTitle_ and optional
+_WindowText_ to appear. Force this to be the active window after it appears.  Optionally do a
+full screen capture on failure.
+
+Parameters:
+| WindowTitle=&lt;string&gt;  | Title of the application window expected to appear      |
+| [WindowText=&lt;string&gt;] | Optional text on the window expected to appear          |
+| [TimeOut=&lt;seconds&gt;]   | Optional overide to the default timeout set in __init__ |</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Win Wait">
+<arguments>
+<arg>WindowTitle</arg>
+<arg>WindowText=</arg>
+<arg>TimeOut=-1</arg>
+</arguments>
+<doc>Direct wrapper for AutoIt's WinWait method.
+
+This is required in order to do return code translation into exceptions for Robot Framework.
+On failure, optionally captures the full screen image to FAIL_WinWait_&lt;n&gt;.png.</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Win Wait Active">
+<arguments>
+<arg>WindowTitle</arg>
+<arg>WindowText=</arg>
+<arg>TimeOut=-1</arg>
+</arguments>
+<doc>Direct wrapper for AutoIt's WinWaitActive method.
+
+This is required in order to do return code translation into exceptions for Robot Framework.
+On failure, optionally captures the full screen image to FAIL_WinWaitActive_&lt;n&gt;.png.</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Win Wait Close">
+<arguments>
+<arg>WindowTitle</arg>
+<arg>WindowText=</arg>
+<arg>TimeOut=-1</arg>
+</arguments>
+<doc>Direct wrapper for AutoIt's WinWaitClose method.
+
+This is required in order to do return code translation into exceptions for Robot Framework.
+On failure, optionally captures the full screen image to FAIL_WinWaitClose_&lt;n&gt;.png.</doc>
+<tags>
+</tags>
+</kw>
+</keywordspec>
