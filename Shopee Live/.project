@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>Shopee Live</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.robotframework.ide.eclipse.main.plugin.robotLibrariesBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.robotframework.ide.eclipse.main.plugin.robotNature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>libspecs/BuiltIn.py</name>
+			<type>1</type>
+			<location>C:/Python27/lib/site-packages/robot/libraries/BuiltIn.py</location>
+		</link>
+		<link>
+			<name>libspecs/DateTime.py</name>
+			<type>1</type>
+			<location>C:/Python27/lib/site-packages/robot/libraries/DateTime.py</location>
+		</link>
+		<link>
+			<name>libspecs/Selenium2Library.py</name>
+			<type>1</type>
+			<location>C:/Python27/Lib/site-packages/Selenium2Library/__init__.py</location>
+		</link>
+		<link>
+			<name>libspecs/sendmail.SendEmailUtility.py</name>
+			<type>1</type>
+			<location>C:/Python27/Lib/site-packages/EmailLibrary/sendmail.py</location>
+		</link>
+	</linkedResources>
+</projectDescription>
